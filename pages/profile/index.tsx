@@ -9,7 +9,7 @@ const Profile: NextPage = () => {
         <div className="flex items-center mt-4 space-x-3">
           <div className="w-16 h-16 rounded-full bg-slate-300" />
           <div className="flex flex-col">
-            <span className="font-medium text-gray-900">Steve Jebs</span>
+            <span className="font-medium text-gray-900">ERIN</span>
             <Link href="/profile/edit">
               <a className="text-sm text-gray-700">Edit profile &rarr;</a>
             </Link>
@@ -90,7 +90,7 @@ const Profile: NextPage = () => {
           <div className="flex space-x-4 items-center">
             <div className="w-12 h-12 rounded-full bg-slate-500" />
             <div>
-              <h4 className="text-sm font-bold text-gray-800">니꼬</h4>
+              <h4 className="text-sm font-bold text-gray-800">ERIN</h4>
               <div className="flex items-center">
                 <svg
                   className="text-yellow-400 h-5 w-5"
@@ -142,12 +142,20 @@ const Profile: NextPage = () => {
           </div>
           <div className="mt-4 text-gray-600 text-sm">
             <p>
-              Normally, both your asses would be dead as fucking fried chicken,
-              but you happen to pull this shit while I&apos;m in a transitional
-              period so I don&apos;t wanna kill you, I wanna help you. But I
-              can&apos;t give you this case, it don&apos;t belong to me.
-              Besides, I&apos;ve already been through too much shit this morning
-              over this case to hand it over to your dumb ass.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              interdum maximus ligula, quis fermentum ipsum. Nullam sed augue
+              tempus, pharetra orci quis, lacinia purus. Nunc in nisi ac turpis
+              maximus maximus. Mauris cursus elementum vestibulum. Maecenas
+              ultricies lacus nec est feugiat dapibus. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Nam tincidunt accumsan ornare. Nulla ac semper elit. In
+              et quam mi. Aliquam velit sapien, fringilla vitae enim porta,
+              accumsan mollis nisl. Nam pretium urna in viverra efficitur.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Integer dignissim condimentum libero, in placerat sapien dictum
+              eget. Praesent scelerisque imperdiet malesuada. Mauris volutpat
+              mattis felis in lacinia. Interdum et malesuada fames ac ante ipsum
+              primis in faucibus..
             </p>
           </div>
         </div>

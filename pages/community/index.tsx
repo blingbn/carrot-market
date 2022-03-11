@@ -18,7 +18,7 @@ const Community: NextPage = () => {
                 the best mandu restaurant?
               </div>
               <div className="mt-5 flex items-center justify-between w-full text-gray-500 font-medium text-xs">
-                <span>니꼬</span>
+                <span>ERIN</span>
                 <span>18시간 전</span>
               </div>
               <div className="flex space-x-5 mt-3 text-gray-700 py-2.5 border-t w-full">

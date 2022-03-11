@@ -11,9 +11,7 @@ const Stream: NextPage = () => {
           <Link key={i} href={`/streams/${i}`}>
             <a className="pt-4 block  px-4">
               <div className="w-full rounded-md shadow-sm bg-slate-300 aspect-video" />
-              <h1 className="text-2xl mt-2 font-bold text-gray-900">
-                Galaxy S50
-              </h1>
+              <h1 className="text-2xl mt-2 font-bold text-gray-900">IphoneX</h1>
             </a>
           </Link>
         ))}

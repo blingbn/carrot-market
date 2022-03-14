@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    reactRoot: 'concurrent'
-  }
-}
+    reactRoot: "concurrent",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

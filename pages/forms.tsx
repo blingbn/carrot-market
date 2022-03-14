@@ -1,27 +1,57 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import { FieldErrors, useForm } from "react-hook-form";
 
+interface LoginForm {
+  username: string;
+  password: string;
+  email: string;
+}
 export default function Forms() {
   // less code, better validation, have full controls
-  const { register, watch } = useForm();
-  console.log(register);
-  console.log(watch);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginForm>({
+    mode: "onChange",
+  });
+  const onValid = (data: LoginForm) => {
+    console.log("i am valid");
+  };
+  const onInvalid = (errors: FieldErrors) => {
+    console.log(errors);
+  };
   //register - function, input을 state와 연결시켜주는 역할
 
   return (
-    <form>
+    <form onSubmit={handleSubmit(onValid, onInvalid)}>
       <input
-        {...register("username")}
+        {...register("username", {
+          required: "username is required",
+          minLength: {
+            message: "The username should be longer than 5 chars",
+            value: 5,
+          },
+        })}
         type="text"
         placeholder="Username"
-        required
       />
-      <input {...register("email")} type="email" placeholder="Email" required />
       <input
-        {...register("password")}
+        {...register("email", {
+          required: "email is required",
+          validate: {
+            notGmail: (value) =>
+              !value.includes("@gmail.com") || "Gmail is not allowed",
+          },
+        })}
+        type="email"
+        placeholder="Email"
+        className={`${Boolean(errors.email?.message) ? "border-red-500" : ""}`}
+      />
+      {errors.email?.message}
+      <input
+        {...register("password", { required: true })}
         type="password"
         placeholder="Password"
-        required
       />
       <input type="submit" value="Create Account" />
     </form>
